@@ -9,7 +9,7 @@ It enables users and protocols to execute cross-chain intents without manual con
 
 OmniSwap AI is built to simplify DeFi operations by allowing users to express actions like:
 
-> "Swap 20 USDC on Base to AVAX on Avalanche Fuji and rebalance my treasury."
+> "Swap 30 USDC on Base to AVAX on Avalanche Fuji and rebalance my treasury."
 
 The agent understands natural language, determines optimal execution paths, signs transactions via BLS signatures using dcipher, and performs cross-chain swaps using OnlySwaps' decentralized infrastructure.
 
