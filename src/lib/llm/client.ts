@@ -7,11 +7,7 @@ import {
 // The client gets the API key from the environment variable `GEMINI_API_KEY`.
 const genAI = new GoogleGenAI({});
 
-/**
- * ユーザープロンプトを解釈し、呼び出すべき関数とその引数を返す
- * @param prompt ユーザーが入力した自然言語のコマンド
- * @returns Geminiが判断した関数呼び出し情報、またはnull
- */
+
 export async function getAiFunctionCall(prompt: string) {
   try {
     console.log("lite");
