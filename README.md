@@ -1,6 +1,6 @@
 # OmniSwap AI – All-Chain, All-Intent Swapping Agent
 
-OmniSwap AI is an intelligent DeFi automation agent that transforms natural language into on-chain swap and liquidity actions — powered by Gemini, OnlySwap, and dcipher.
+OmniSwap AI is an intelligent DeFi automation agent that transforms natural language into on-chain swap and liquidity actions — powered by Gemini, OnlySwaps, and dcipher.
 It enables users and protocols to execute cross-chain intents without manual configuration, liquidity management, or bridge dependencies.
 
 ---
@@ -11,14 +11,14 @@ OmniSwap AI is built to simplify DeFi operations by allowing users to express ac
 
 > "Swap 20 USDC on Base to AVAX on Avalanche Fuji and rebalance my treasury."
 
-The agent understands natural language, determines optimal execution paths, signs transactions via BLS signatures using dcipher, and performs cross-chain swaps using OnlySwap’s decentralized infrastructure.
+The agent understands natural language, determines optimal execution paths, signs transactions via BLS signatures using dcipher, and performs cross-chain swaps using OnlySwaps' decentralized infrastructure.
 
 ---
 
 ## Key Features
 
 * **Natural Language Swapping**: Executes swap, bridge, and rebalance actions based on plain-text user inputs.
-* **All-Chain Compatibility**: Works across multiple EVM-compatible chains, powered by OnlySwap’s protocol.
+* **All-Chain Compatibility**: Works across multiple EVM-compatible chains, powered by OnlySwaps' protocol.
 * **Decentralized Verification**: Uses dcipher’s BLS threshold signatures for secure, trust-minimized validation.
 * **AI Reasoning Core**: Google Gemini parses user intent and generates structured on-chain execution plans.
 * **Autonomous Execution**: Once deployed, the agent can run continuously, monitor conditions, and perform rebalancing.
@@ -31,7 +31,7 @@ The agent understands natural language, determines optimal execution paths, sign
 | ---------------------- | --------------- | ----------------------------------------------- |
 | **Intent Layer**       | Gemini          | Interprets user prompts into actionable intents |
 | **Planning Layer**     | OmniSwap Agent  | Translates intents into executable steps        |
-| **Execution Layer**    | OnlySwap SDK    | Handles routing and transaction dispatch        |
+| **Execution Layer**    | OnlySwaps SDK    | Handles routing and transaction dispatch        |
 | **Verification Layer** | dcipher Network | Ensures decentralized signing and consensus     |
 
 ---
@@ -51,7 +51,7 @@ The agent understands natural language, determines optimal execution paths, sign
 
 * Node.js 18+
 * MetaMask or other EVM-compatible wallet
-* OnlySwap API key or SDK access
+* OnlySwaps-JS Library
 * Gemini API key
 * dcipher SDK credentials
 
@@ -69,7 +69,7 @@ Create a `.env` file in the root directory:
 
 ```
 GEMINI_API_KEY=your_gemini_key
-ONLYSWAP_API_KEY=your_onlyswap_key
+ONEINCH_API_KEY=your_oneinch_key
 DCIPHER_API_KEY=your_dcipher_key
 ```
 
@@ -77,6 +77,7 @@ Then run the agent:
 
 ```bash
 node index.js
+npm run dev
 ```
 
 ---
@@ -90,7 +91,7 @@ node index.js
 The agent will:
 
 1. Parse the instruction using Gemini
-2. Fetch optimal swap and routing data from OnlySwap
+2. Fetch optimal swap and routing data from OnlySwaps
 3. Verify the operation through dcipher’s BLS network
 4. Execute the transaction automatically
 
