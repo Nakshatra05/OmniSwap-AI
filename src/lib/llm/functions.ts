@@ -1,8 +1,5 @@
 import { Type } from "@google/genai";
 
-/**
- * Geminiに関数の仕様を教えるためのFunction Declaration
- */
 export const getSwapQuoteDeclaration = {
   name: "get_swap_quote",
   description: "Gets a swap quote for two tokens.",
@@ -26,9 +23,7 @@ export const getSwapQuoteDeclaration = {
   },
 };
 
-/**
- * 特定トークンの残高を取得するためのFunction Declaration
- */
+
 export const getTokenBalanceDeclaration = {
   name: "get_token_balance",
   description: "Gets the balance of a specific token in the user's wallet.",
